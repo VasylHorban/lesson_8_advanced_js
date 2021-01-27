@@ -1,0 +1,6 @@
+<div class="btn-container">
+    <span class="icon edit" (click)="edit()"></span>
+    <span *ngIf="permissionToEdit" (click)="askRemove()" class="icon remove"></span>
+    <span *ngIf="permissionToSave" (click)="askSave()" class="icon accept"></span>
+</div>
+<app-modal-window *ngIf="openModal" [scriptIndex]="scriptIndex" (respondEvent)="cheking($event)" ></app-modal-window>

@@ -1,0 +1,10 @@
+<div class="box">
+    <h1>Skills</h1>
+    <ul *ngFor="let skill of skills; let index = index">
+      <li>
+        <button class="skill-btn" type="text" (click)="switch($event)">{{skill.title}}</button>
+        <textarea [class.edit] = "globalEdit && isEdit" (input) = "onInput()" [style.display]="!index ? 'block' : 'none'" class="text" [(ngModel)] = "skill.description"></textarea>
+      </li>
+    </ul>
+    <app-edit-btns class="btns" *ngIf="globalEdit" [permissionToSave] = "isChanged" (saveEvent) = "save()" (removeEvent)= "remove()" (editEvent) = "changeEdit()"></app-edit-btns>
+  </div>

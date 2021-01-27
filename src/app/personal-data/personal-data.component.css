@@ -1,0 +1,25 @@
+div{
+    margin-top: 20px;
+    border-top: 2px dashed cadetblue;
+    position: relative;
+}
+label{
+    display: block;
+    margin-top: 10px;
+    pointer-events: none;
+
+}
+input{
+    border: none;
+    color: rgb(90, 83, 83);
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+
+}
+span{
+    font-weight: 300;
+}
+
+.edit{
+    pointer-events: all;
+}

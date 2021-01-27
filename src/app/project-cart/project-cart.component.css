@@ -1,0 +1,41 @@
+img {
+    width: 440px;
+    height: 250px;
+    margin-bottom: 10px;
+
+}
+div{
+    margin-bottom: 20px;
+    position: relative;
+}
+.name{
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: capitalize;
+    margin:10px 0;
+    pointer-events: none;
+    padding: 5px;
+    width: 100%;
+}
+.text{
+    border: none;
+    resize: none;
+    overflow: hidden;
+    width: 440px;
+    height: 150px;
+    pointer-events: none;
+}
+.btns{
+   margin-top: 10px;
+}
+.edit{
+    pointer-events: all; 
+}
+.edit-box{
+    display: block;
+    margin-top:20px;
+}
+.img-input{
+    border-bottom: 1px solid  rgb(58, 143, 143);
+    padding: 0px 10px;
+}

@@ -1,0 +1,40 @@
+li{
+    list-style-type: none;
+    margin-top: 15px;
+}
+.skill-btn{
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: rgb(61, 58, 58);
+    cursor: pointer;
+    transition: background-color ease .2s;
+    width: 100%;
+}
+.skill-btn:hover{
+    background-color: rgb(225, 231, 233);
+}
+.skill-btn:active{
+    background-color: rgb(181, 203, 211);
+}
+.text{
+    border: none;
+    overflow: hidden;
+    resize: none;
+    width: 300px;
+    padding: 10px 5px;
+    min-height: 50px ;
+    display: none;
+    transition: all ease .5s;
+    pointer-events: none;
+}
+.box{
+    margin-top: 40px;
+    position: relative;
+}
+.btns{
+    position: absolute;
+    bottom: -50px;
+}
+.edit{
+    pointer-events: all;
+}

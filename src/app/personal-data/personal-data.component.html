@@ -1,0 +1,11 @@
+<div>
+    <label [class.edit] = "isEdit && globalEdit">
+    <span >name : </span><input  (input) = "onInput()" type="text" [(ngModel)]="user.name">
+  </label>
+  <label [class.edit] = "isEdit && globalEdit">
+    <span>surname : </span><input (input) = "onInput()" type="text" [(ngModel)]="user.surname">
+  </label>
+  <label [class.edit] = "isEdit && globalEdit">
+    <span>email : </span><input (input) = "onInput()" type="text" [(ngModel)]="user.email">
+  </label>
+  <app-edit-btns class="btns" *ngIf="globalEdit" [permissionToSave] = "isChanged" (saveEvent) = "save()" (removeEvent)= "remove()" (editEvent) = "changeEdit()"></app-edit-btns></div>

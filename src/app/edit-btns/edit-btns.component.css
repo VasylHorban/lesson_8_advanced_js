@@ -1,0 +1,41 @@
+.btn-container{
+    display: flex;
+    width: 152px;
+    background-color: rgba(110, 115, 119, 0.377);
+    border-radius: 5px;
+    position: relative;
+
+}
+.icon{
+    width: 24px;
+    height: 24px;
+    display: block;
+    cursor: pointer;
+    margin: 5px 10px;
+    
+    transition-property: filter, transform;
+    transition-timing-function: ease;
+    transition-duration: .3s;
+    
+
+}
+.icon:hover{
+    transform: scale(1.1);
+}
+.icon:active{
+    filter: invert(30%);
+}
+.edit{
+    margin-left: 20px;
+    background-image: url('../../assets/images/pencil.png');
+}
+
+.remove{
+    background-image: url('../../assets/images/delete.png');
+}
+
+.accept{
+    margin-right: 20px;
+    background-image: url('../../assets/images/checked.png');
+}
+

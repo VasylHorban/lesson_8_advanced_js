@@ -1,0 +1,15 @@
+<button class="btn add" (click) = 'isOpen = !isOpen'>+</button>
+
+<form *ngIf="isOpen" onsubmit="return false;">
+        <label>
+            <h2>Введіть назву проекту</h2>
+            <input name ="name" [(ngModel)] = "newProject.name" type="text">
+        </label>
+        <label >
+            <h2>Сюди можете добавити поcилання на фото</h2>
+            <input name ="img" [(ngModel)] = "newProject.img"  type="text">
+        </label>
+        <h2>Сюди можете добавити опис роботи</h2>
+        <textarea name ="text" [(ngModel)] = "newProject.description" class="add-text"></textarea>
+    <button class="btn submit" (click)="save()">Добавити</button>    
+</form>

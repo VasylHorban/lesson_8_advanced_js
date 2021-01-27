@@ -1,0 +1,36 @@
+img{
+    width: 300px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+
+.avatar-container{
+    position: relative;
+}
+
+.img-prompt{
+    font-size: 12px;
+    color: rgb(129, 129, 129);
+
+}
+.img-input{
+    border-bottom: 1px solid  rgb(58, 143, 143);
+    padding: 0px 10px;
+}
+.edit-box{
+    display: block;
+    margin-top: 20px;
+}
+
+.btns{
+    position: absolute;
+    top: 175px;
+    left: 0;
+}
+.counter{
+    position: absolute;
+    top: 175px;
+    right: 0;
+}
+

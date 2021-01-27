@@ -1,0 +1,10 @@
+
+    <div class="avatar-container">   
+        <img [src]="user.avatar" >
+        <app-counter class="counter" [amounProjects] = "amounProjects"></app-counter>
+        <app-edit-btns class="btns" *ngIf="globalEdit" [permissionToSave] = "isChanged" (saveEvent) = "save()" (removeEvent)= "remove()" (editEvent) = "changeEdit()"></app-edit-btns>
+        <label *ngIf="isEdit && globalEdit" class="edit-box">
+            <span class="img-prompt">*Сюди можете добавити посилання на нове фото.</span>
+            <input type="text" #imgSrc class="img-input" (input)="onInput(imgSrc.value)">
+        </label>
+    </div>  

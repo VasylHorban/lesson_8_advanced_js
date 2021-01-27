@@ -1,0 +1,10 @@
+<div>
+    <input (input)="onInput('')" class="name" [class.edit] = "isEdit && globalEdit" type="text" [(ngModel)]="project.name">
+    <img [src]="project.img">
+    <textarea (input)="onInput('')" [class.edit] = "isEdit && globalEdit" class="text" [(ngModel)] = "project.description"></textarea>
+    <app-edit-btns class="btns" *ngIf="globalEdit" [permissionToSave] = "isChanged" (saveEvent) = "save()" (removeEvent)= "remove()" (editEvent) = "changeEdit()"></app-edit-btns>
+    <label *ngIf="isEdit && globalEdit" class="edit-box">
+        <span class="img-prompt">*Сюди можете добавити посилання на нове фото.</span>
+        <input  type="text" #imgSrc class="img-input" (input)="onInput(imgSrc.value)">
+    </label>
+</div>
